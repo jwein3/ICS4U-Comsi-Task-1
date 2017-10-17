@@ -1,1 +1,1 @@
-# ICS4U-Comsi-Task-1
+This program will be used to find every variable in a linear equation and also help you find the slope and give you an equation based on your inputs.
