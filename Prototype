@@ -1,0 +1,110 @@
+Hello, this program will help you solve your linear equations!
+
+What function would you like to use?
+
+1.Solve for y
+2.Solve for x
+3.Solve for slope
+4.Find slope
+5.Find Y intercept
+
+1
+
+what is your x value?
+what is your slope?
+what is your y intercept?
+
+your y point is:
+
+would you like to solve another function?
+
+yes
+
+What function would you like to use?
+
+1.Solve for y
+2.Solve for x
+3.Solve for slope
+4.Find slope
+5.Find Y intercept
+
+2
+
+what is your y value?
+what is your slope?
+what is your y intercept?
+
+your x point is:
+
+would you like to solve another function?
+
+yes
+
+What function would you like to use?
+
+1.Solve for y
+2.Solve for x
+3.Solve for slope
+4.Find slope
+5.Find Y intercept
+
+3
+
+What is your x point?
+what is your y point?
+what is your y intercept?
+
+your slope is:
+
+would you like to solve another function?
+
+yes
+
+What function would you like to use?
+
+1.Solve for y
+2.Solve for x
+3.Solve for slope
+4.Find slope
+5.Find Y intercept
+
+4
+
+What is your first x value?
+What is your first y value?
+What is your second x value?
+What is your second y value?
+
+Your slope is:
+
+Would you like to solve another function?
+
+yes
+
+What function would you like to use?
+
+1.Solve for y
+2.Solve for x
+3.Solve for slope
+4.Find slope
+5.Find Y intercept
+
+5
+
+What is your x value?
+what is your slope?
+what is your y value?
+
+your y intercept is:
+
+would you like to solve another function?
+
+spaghetti
+
+thats an invaid input, try again please!
+
+would you like to solve another function?
+
+no
+
+Goodbye
