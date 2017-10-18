@@ -1,0 +1,22 @@
+package assignment.pkg1;
+import java.util.Scanner;
+
+public class Assignment1 {
+  
+    public static double getx(int x){
+        double xvalue;
+        Scanner input_x = new Scanner(System.in);
+        System.out.println("What is your x value?");
+        while(!input_x.hasNextDouble()){
+            input_x.next();
+            System.out.println("Invalid Input, please try again!");
+        }
+       xvalue = input_x.nextDouble();
+       return xvalue;
+    }
+    
+    public static void main(String[] args) {
+        int x=0;
+        getx(x);
+        System.out.println("Your x value is:"+x);
+    }
