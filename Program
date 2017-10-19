@@ -14,9 +14,68 @@ public class Assignment1 {
        xvalue = input_x.nextDouble();
        return xvalue;
     }
-    
+    public static double gety(int y){
+        double yvalue;
+        Scanner input_y = new Scanner(System.in);
+        System.out.println("What is your y value?");
+        while(!input_y.hasNextDouble()){
+            input_y.next();
+            System.out.println("Invalid Input, please try again!");
+        }
+       yvalue = input_y.nextDouble();
+       return yvalue;
+    }
+    public static double getslope(int slope){
+        double slopevalue;
+        Scanner input_slope = new Scanner(System.in);
+        System.out.println("What is your slope?");
+        while(!input_slope.hasNextDouble()){
+            input_slope.next();
+            System.out.println("Invalid Input, please try again!");
+        }
+       slopevalue = input_slope.nextDouble();
+       return slopevalue;
+    }
+    public static double getycept(int ycept){
+        double yceptvalue;
+        Scanner input_ycept = new Scanner(System.in);
+        System.out.println("What is your y intercept value?");
+        while(!input_ycept.hasNextDouble()){
+            input_ycept.next();
+            System.out.println("Invalid Input, please try again!");
+        }
+       yceptvalue = input_ycept.nextDouble();
+       return yceptvalue;
+    }
     public static void main(String[] args) {
         int x=0;
-        getx(x);
-        System.out.println("Your x value is:"+x);
+        int y=0;
+        int ycept =0;
+        int slope=0;
+        String choice;
+        Scanner scan =new Scanner(System.in);
+        System.out.println("Hello, This program will help you solve your linear equations!");
+        System.out.println("");
+        System.out.println("What would you like to solve for?");
+        System.out.println("1. Solve for y");
+        System.out.println("2. Solve for x");
+        System.out.println("1. Solve for y intercept");
+        System.out.println("1. Solve for slope");
+        System.out.println("1. Find slope using 2 points");
+        choice = scan.nextLine();
+        switch(choice){
+            case "1":
+                System.out.println("Your y value is: "+(getslope(slope)*getx(x)+getycept(ycept)));
+            
+            case "2":
+                System.out.println("Your x value is: "+((gety(y)-getycept(ycept))/getslope(slope)));
+        }
+        
+        
+        //System.out.println("Your equation is y="+getslope(slope)+"*"+"x+"+getycept(ycept));
     }
+    
+  
+        
+    }
+    
