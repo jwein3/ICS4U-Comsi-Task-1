@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package assignment.pkg1;
+package assignment1;
 import java.util.Scanner;
 
 public class Assignment1 {
@@ -11,6 +6,7 @@ public class Assignment1 {
   double y;
   double ycept;
   double slope;
+  String choice;
     public static double getx(double x){
         double xvalue;
         Scanner input_x = new Scanner(System.in);
@@ -55,23 +51,9 @@ public class Assignment1 {
        yceptvalue = input_ycept.nextDouble();
        return yceptvalue;
     }
-    public Assignment1(){}
     
-    public Assignment1(double xpoint,double ypoint,double m,double yintercept){
-        x=xpoint;
-        y=ypoint;
-        slope=m;
-        ycept=yintercept;
+    public Assignment1(){
         
-    }
-    public static void main(String[] args) {
-        double x =0;
-        double y =0;
-        double ycept =0;
-        double slope =0;
-        String choice;
-        Assignment1 equation1 = new Assignment1();
-       
         Scanner scan =new Scanner(System.in);
         System.out.println("Hello, This program will help you solve your linear equations!");
         System.out.println("");
@@ -84,18 +66,42 @@ public class Assignment1 {
         choice = scan.nextLine();
         switch(choice){
             case "1":
-                //System.out.println("Your y value is: "+(getslope(slope)*getx(x)+getycept(ycept)));
-                 x=equation1.getx(x);
-                 slope=equation1.getslope(slope);
-                 ycept=equation1.getycept(ycept);
-                 System.out.println("Your y value is: "+(slope*x-ycept));
+               x=getx(x);
+               slope=getslope(slope);
+               ycept=getycept(ycept);
             case "2":
-                System.out.println("Your x value is: "+((gety(y)-getycept(ycept))/getslope(slope)));
-            
+               y=gety(y);
+               slope=getslope(slope);
+               ycept=getycept(ycept);
             case "3":
-                
-                
+               x=getx(x);
+               y=gety(y);
+               slope=getslope(slope); 
+            case "4":
+                x=getx(x);
+                y=gety(y);
+                ycept=getycept(ycept);
         }
+       
+    }
+    public static void main(String[] args) {
+
+        Assignment1 equation1 = new Assignment1();
+        switch(equation1.choice){
+            case "1":
+                System.out.println(equation1.x*equation1.slope+equation1.ycept);
+            case "2":
+                System.out.println((equation1.y-equation1.ycept)/equation1.slope);
+            case "3":
+                System.out.println(equation1.y-(equation1.x*equation1.slope));
+            case "4":
+                System.out.println((equation1.y-equation1.ycept)/equation1.x);
+        }
+            
+       
+        
+        
+
         
         
         
@@ -104,5 +110,3 @@ public class Assignment1 {
   
         
     }
-    
-
