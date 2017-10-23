@@ -1,0 +1,43 @@
+Display the welcome screen to the user, with options presented for how they want to solve their equation
+Check for any invalid inputs and repeat the screen again
+
+Solving for y value:
+call method to ask the user for their x value
+call method to ask the user for their slope value
+call method to ask the user for their y intercept value
+return calculations to user
+ask them if they want to run the program again
+
+Solving for slope value:
+call method to ask the user for their x value
+call method to ask the user for their y value
+call method to ask the user for their y intercept value
+check if the user is attempting to divide by 0 and stop them
+return calculations to user
+ask them if they want to run the program again
+
+Solving for x value:
+call method to ask the user for their y value
+call method to ask the user for their slope value
+call method to ask the user for their y intercept value
+check if the user is attempting to divide by 0 and stop them
+return calculations to user
+ask them if they want to run the program again
+
+Solving for y intercept value:
+call method to ask the user for their x value
+call method to ask the user for their slope value
+call method to ask the user for their y value
+return calculations to user
+ask them if they want to run the program again
+
+Solving for slope using 2 points on a grid:
+call method to ask the user for their first x value
+call method to ask the user for their second x value
+call method to ask the user for their first y value
+call method to ask the user for their second y value
+check if the user is attempting to divide by 0 and stop them
+return calculations to user
+ask them if they want to run the program again
+
+if they say no, display goodbye message
