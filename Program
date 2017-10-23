@@ -1,9 +1,17 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package assignment.pkg1;
 import java.util.Scanner;
 
 public class Assignment1 {
-  
-    public static double getx(int x){
+  double x;
+  double y;
+  double ycept;
+  double slope;
+    public static double getx(double x){
         double xvalue;
         Scanner input_x = new Scanner(System.in);
         System.out.println("What is your x value?");
@@ -14,7 +22,7 @@ public class Assignment1 {
        xvalue = input_x.nextDouble();
        return xvalue;
     }
-    public static double gety(int y){
+    public static double gety(double y){
         double yvalue;
         Scanner input_y = new Scanner(System.in);
         System.out.println("What is your y value?");
@@ -25,7 +33,7 @@ public class Assignment1 {
        yvalue = input_y.nextDouble();
        return yvalue;
     }
-    public static double getslope(int slope){
+    public static double getslope(double slope){
         double slopevalue;
         Scanner input_slope = new Scanner(System.in);
         System.out.println("What is your slope?");
@@ -36,7 +44,7 @@ public class Assignment1 {
        slopevalue = input_slope.nextDouble();
        return slopevalue;
     }
-    public static double getycept(int ycept){
+    public static double getycept(double ycept){
         double yceptvalue;
         Scanner input_ycept = new Scanner(System.in);
         System.out.println("What is your y intercept value?");
@@ -47,35 +55,54 @@ public class Assignment1 {
        yceptvalue = input_ycept.nextDouble();
        return yceptvalue;
     }
+    public Assignment1(){}
+    
+    public Assignment1(double xpoint,double ypoint,double m,double yintercept){
+        x=xpoint;
+        y=ypoint;
+        slope=m;
+        ycept=yintercept;
+        
+    }
     public static void main(String[] args) {
-        int x=0;
-        int y=0;
-        int ycept =0;
-        int slope=0;
+        double x =0;
+        double y =0;
+        double ycept =0;
+        double slope =0;
         String choice;
+        Assignment1 equation1 = new Assignment1();
+       
         Scanner scan =new Scanner(System.in);
         System.out.println("Hello, This program will help you solve your linear equations!");
         System.out.println("");
         System.out.println("What would you like to solve for?");
         System.out.println("1. Solve for y");
         System.out.println("2. Solve for x");
-        System.out.println("1. Solve for y intercept");
-        System.out.println("1. Solve for slope");
-        System.out.println("1. Find slope using 2 points");
+        System.out.println("3. Solve for y intercept");
+        System.out.println("4. Solve for slope");
+        System.out.println("5. Find slope using 2 points");
         choice = scan.nextLine();
         switch(choice){
             case "1":
-                System.out.println("Your y value is: "+(getslope(slope)*getx(x)+getycept(ycept)));
-            
+                //System.out.println("Your y value is: "+(getslope(slope)*getx(x)+getycept(ycept)));
+                 x=equation1.getx(x);
+                 slope=equation1.getslope(slope);
+                 ycept=equation1.getycept(ycept);
+                 System.out.println("Your y value is: "+(slope*x-ycept));
             case "2":
                 System.out.println("Your x value is: "+((gety(y)-getycept(ycept))/getslope(slope)));
+            
+            case "3":
+                
+                
         }
         
         
-        //System.out.println("Your equation is y="+getslope(slope)+"*"+"x+"+getycept(ycept));
+        
     }
     
   
         
     }
     
+
