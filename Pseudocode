@@ -1,0 +1,36 @@
+method for getting variables:
+for(each variable needed)
+  Scanner class for input
+  while(the user doesn't implement a proper value)
+      ask them for a user input
+      display message telling them to enter a proper value
+  return value gotten from method
+
+main program
+define all variables needed for math calculations
+define a string value for user input
+create a new scanner for user input
+define a new boolean that loops the program and set it to true
+print out all options to the user
+get user input
+while(program loop boolean is true) 
+ case/switch(program they chose to run)
+      case 1: 
+        solve for y value by calling the methods to get the values to solve for y, then return it to the user
+      case 2: 
+        solve for x value by calling the methods to get the values to solve for x, then return it to the user
+      case 3: 
+        solve for y intercept value by calling the methods to get the values to solve for y intercept, then return it to the user
+      case 4: 
+        solve for slope value by calling the methods to get the values to solve for slope, then return it to the user
+      case 5: 
+        solve for slope using 2 points by calling the methods to get the 2 points needed to solve for slope , then return it to the user
+       default:
+         print out that the user inputted an invalid statemnet
+    
+   ask the user if they want to run the program again
+      if yes
+        run the program again
+      if no 
+        stop the program and display the goodbye message
+        
