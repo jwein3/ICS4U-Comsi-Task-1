@@ -70,6 +70,7 @@ public class Assignment1 extends GetValues {
         boolean again = true;
         String quit;
         Scanner cont = new Scanner(System.in);
+      //Defining what to round each value to, in this case, 2 decimal points
         DecimalFormat format_num = new DecimalFormat("#.00");
         while(again){
         //Initialising the equations  
